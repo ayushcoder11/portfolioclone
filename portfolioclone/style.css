@@ -1,0 +1,344 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bebas Neue', sans-serif;
+    overflow-x: hidden;
+}
+
+/* user interface css */
+
+/* body{ */
+    /* background-image: url(https://images.unsplash.com/photo-1480506132288-68f7705954bd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cG9ydGZvbGlvJTIwYmFja2dyb3VuZHxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80); */
+    /* background-image: url(https://wallpaperaccess.com/full/5651982.jpg); */
+    /* background-image: url(https://img.freepik.com/free-vector/gradient-network-connection-background_23-2148888131.jpg?w=2000); */
+    /* background-image: url(https://img.freepik.com/premium-photo/blue-abstract-background-with-network-grid-particles-connected-generative-ai_438099-24569.jpg?w=2000); */
+    /* background-image: url(https://static.vecteezy.com/system/resources/thumbnails/013/087/516/small/diagonal-golden-line-glass-cube-on-black-background-illustration-of-website-banner-poster-sign-corporate-business-social-media-post-billboard-agency-advertising-media-motion-video-animation-wave-vector.jpg); */
+    /* background-image: url(https://i.pinimg.com/474x/fd/66/26/fd6626a6d4d774e925b9eca3d1b2e96a.jpg); */
+    /* background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdp60FVoS6UaiP_1d900G9YX7XsxkFwT13JQ&usqp=CAU); */
+    /* background-image: url(https://wallpaperaccess.com/full/682226.jpg); */
+    /* background-image: url(https://img.freepik.com/premium-photo/young-man_52137-30180.jpg);
+    background-repeat: no-repeat; */
+    /* background-size: cover; */
+/* } */
+
+.navbar{
+    display: flex;
+    height: 70px;
+    width: 100%;
+    position: static;
+    /* border: 1px solid yellow; */
+    /* background-color: blue; */
+    /* position: sticky; */
+}
+
+
+
+.right{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 70px;
+    align-items: center;
+}
+
+.right a{
+    font-size: 25px;
+    gap: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+.right a:hover{
+    text-decoration: underline;
+    text-decoration-color: yellow;
+}
+
+.main{
+    display: flex;
+    width: 100%;
+    padding-top: 20px;
+    /* border: 1px solid red; */
+    height: 600px;
+    align-items: center;
+}
+
+.leftcontent{
+    display: inline-block;
+    margin-left: 80px;
+    margin-top: 0px;
+    /* border: 1px solid blue; */
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+}
+
+.resumebut{
+    display: flex;
+    
+}
+
+.medium{
+    font-size: 40px;
+    padding-bottom: 10px;
+}
+
+.big{
+    font-size: 60px;
+    padding-bottom: 10px;
+    /* background-color: red; */
+    width: 550px;
+}
+
+.big::selection{
+   background-color:red; 
+}
+
+.small{
+    font-size: 24px;
+    padding-bottom: 20px;
+}
+
+.tiny{
+    padding-top: 10px;
+    padding-bottom: 20px;
+    font-size: 15px;
+}
+
+.logos{
+    display: flex;
+    font-size: 30px;
+    justify-content: center;
+    padding-top: 60px;
+    gap: 30px;
+}
+
+.logos a{
+    color: white;
+}
+
+.outer{
+    background-image: url(https://img.freepik.com/premium-photo/young-man_52137-30180.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgb(246, 236, 236);
+}
+
+/* about interface css */
+
+.about{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 150px;
+    color: white;
+    background-color: black;
+}
+.heading{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    font-size: 40px;
+}
+
+.cont{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin:20px;
+    margin-right: 20px;
+    padding-right: 20px;
+    font-size: 25px;
+    line-height: 30px;
+    /* border: 1px solid blue; */
+}
+
+/* project interface */
+
+
+.headingproject{
+    display: flex;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    justify-content: center;
+    font-size: 30px;
+    /* background-color: black; */
+    /* color: white; */
+    /* height: 200px; */
+}
+
+.container{
+    background-color: black;
+    color: white;
+    /* border: 1px solid blue; */
+    display:grid;
+    /* grid-template-column is used for specifying nuum of columns required */
+    /* we have to specify widths of each column in it or if we wnat same width for all columns then use auto n num of times if we reqire n columns */
+    /* fr is also used to give widht in terms of fraction of display screen */
+    /* repeat is used for giving multiple columns same sizes(here widht) */
+    /* grid-template-columns: auto auto auto; */
+    /* grid-template-columns: 400px 400px 200px; */
+    grid-template-columns: 300px 300px 300px;
+    /* minmax is used for giving min and max widht for column and we hsve to give n num of times if there are n columns */
+    /* grid-template-columns: minmax(30px,1fr) minmax(30px,1fr) minmax(30px,1fr); */
+    /* grid-template-columns: repeat(3,200px); */
+    /* grid-template-row is used for specifying height of each row i.e if we have n rows then we need to specify n heights in it */
+    grid-template-rows: 300px 300px;
+    /* but for using or seeeing the effect of above two properties we need to comment heigth and width of boxes */
+    /* i.e for template column comment width and for template row comment height */
+    /* gap is sued for giving gap between grid elements in along both column and row */
+    gap:10px;
+    /* used for giving gap beteween col of grid */
+    /* column-gap: 40px; */
+    /* used for giving gap between rows of grid */
+    row-gap: 80px;
+    justify-content: space-evenly;
+    
+   
+
+}
+.box{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-between;
+   gap: 30px;
+    /* border:2px solid rgb(12, 10, 170); */
+    border: 1px solid white;
+    /* border: 1px solid yellow; */
+    margin-left: 50px;
+    background-color: rgb(26, 25, 25);
+    
+    
+}
+
+.viewbut{
+    width: 100%;
+    height: 35px;
+    background-color: yellow;
+    /* background-color: white; */
+    font-size: 20px;
+    border: none;
+}
+
+.viewbut a{
+    text-decoration: none;
+    color: black;
+}
+
+.viewbut:hover{
+    cursor: pointer;
+}
+
+.prodes{
+    padding-left: 20px;
+}
+
+.blk{
+    background-color: black;
+    color: white;
+}
+
+/* skills user interface */
+
+.skills{
+    background-color: black;
+    margin-top: 90px;
+    /* height: 700px; */
+    width: 100%;
+    color: white;
+    /* border: 2px solid blue; */
+}
+
+.skillsname{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 80px;
+    font-size: 40px;
+}
+
+.skillsdesandimg{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+}
+
+.skillimg{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 4px solid blue; */
+}
+
+.skillimg img{
+    width: 600px;
+    height: 500px;
+}
+
+.skilldes{
+    width: 50%;
+    /* border:3px solid yellow; */
+    padding-left: 30px;
+}
+
+.skilldes p{
+    padding-bottom: 30px;
+}
+
+.box h3{
+    padding-top: 20px;
+}
+
+.more{
+    display: flex;
+    flex-direction: column;
+    height: 800px;
+    width: 100%;
+}
+
+.more h3{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    font-size: 40px;
+}
+
+.lnsk{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.lnsk a{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    margin-top: 50px;
+    margin-left: 50px;
+    font-size: 26px;
+    text-decoration: none;
+}
+
+.belbut{
+    display: flex;
+    width: 600px;
+
+    justify-content: space-evenly;
+}
+
+.belbut button{
+    margin-top: 70px;
+    height: 30px;
+    width: 140px;
+    border-radius: 8px;
+    font-size: 20px;
+    border:none
+}
+
+.belbut button:hover{
+    cursor: pointer;
+}
